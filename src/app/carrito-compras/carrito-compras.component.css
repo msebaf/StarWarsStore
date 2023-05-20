@@ -1,0 +1,38 @@
+h2 {
+    color: azure;
+    text-align: center;
+  }
+  
+  ul {
+    color: wheat;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #itemContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #ffe81f; /* Yellow border */
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  #itemContainer span {
+    flex: 1;
+    text-align: center;
+  }
+  
+#todo{
+    background-color: black;
+}
+
+button {
+  background-color: black;
+  border: 2px solid yellow;
+  border-radius: 5px;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+}

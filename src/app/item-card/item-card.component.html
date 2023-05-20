@@ -1,0 +1,10 @@
+<div class="card">
+  <h2 class="card-title" style="text-align: center; font-weight: bold;">{{ product.name }}</h2>
+  <p class="card-text" style="text-align: center;"> <strong> Categoría </strong> <br>{{ product.category }}</p>
+  <p class="card-text" style="text-align: center;"><strong> Películas </strong> <br>{{ product.movies }}</p>
+  <p class="card-text">Precio: {{ product.price }}</p>
+  <p class="card-text">Cantidad: {{ quantity }}</p>
+  <button class="card-button" (click)="decreaseQuantity()">-</button>
+  <button class="card-button" (click)="increaseQuantity()">+</button>
+  <button class="card-button" (click)="addToCart()">Add to Cart</button>
+</div>

@@ -1,0 +1,21 @@
+<h2>Tu Pedido</h2>
+<ul>
+  <div id="todo">
+    <li>
+      <div id="itemContainer" class="header">
+        <span>Item</span>
+        <span>Categoria</span>
+        <span>Precio</span>
+        <button style="background-color: yellow; color: black;" (click)="volverClickeado.emit()">Volver</button>
+      </div>
+    </li>
+    <li *ngFor="let item of productsCart">
+      <div id="itemContainer">
+        <span>{{ item.name }}</span>
+        <span>{{ item.category }}</span>
+        <span>{{ item.price }}</span>
+        <button (click)="removeFromCart(item)">Quitar</button>
+      </div>
+    </li>
+  </div>
+</ul>
