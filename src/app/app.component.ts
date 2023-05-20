@@ -90,7 +90,7 @@ export class AppComponent {
 
   selectCurrency(currency: string) {
     this.selectedCurrency = currency;
-
+    
     this.products.forEach((product: any) => {
       switch (currency) {
         case 'us':

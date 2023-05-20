@@ -17,5 +17,13 @@
         <button (click)="removeFromCart(item)">Quitar</button>
       </div>
     </li>
+    <li>
+      <div id="itemContainer" class="footer">
+        <span>Productos: {{ productsCart.length }}</span>
+        <span>Monto: {{ montoTotal }}</span>
+        
+        <button style="background-color: yellow; color: black;">Realizar compra</button>
+      </div>
+    </li>
   </div>
 </ul>
