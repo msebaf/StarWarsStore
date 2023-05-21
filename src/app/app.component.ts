@@ -14,7 +14,7 @@ export class AppComponent {
   products: any;
   datos_cargados = false;
   mostrarCarrito = false;
-  selectedCurrency: string = 'us'; // Moneda seleccionada (por defecto es 'us')
+  selectedCurrency: string = 'us'; 
 
   constructor(private http: HttpClient) { }
 
@@ -94,13 +94,13 @@ export class AppComponent {
     this.products.forEach((product: any) => {
       switch (currency) {
         case 'us':
-          product.price = product.usdPrice; // Precio en dólares (valor original)
+          product.price = product.usdPrice; 
           break;
         case 'eu':
-          product.price = product.usdPrice* 0.9; // Precio en euros (valor original multiplicado por 0.9)
+          product.price = product.usdPrice* 0.9; 
           break;
         case 'ar':
-          product.price = product.usdPrice* 470; // Precio en pesos argentinos (valor original multiplicado por 470)
+          product.price = product.usdPrice* 470; 
           break;
         default:
           break;

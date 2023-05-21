@@ -1,9 +1,9 @@
 .card {
     background-color: #000;
-    color: #FFE81F; /* Yellow color */
+    color: #FFE81F; 
     padding: 20px;
     border-radius: 10px;
-    border: 2px solid #FFE81F; /* Yellow border */
+    border: 2px solid #FFE81F; 
     font-family: 'Roboto', sans-serif;
     width: 40vh;
     height: 45vh;
