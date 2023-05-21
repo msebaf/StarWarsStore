@@ -31,4 +31,13 @@ export class CarritoComprasComponent {
       this.montoTotal += this.productsCart[i].price;
     }
   }
+
+  compraExitosa() {
+    alert('Compra realizada con éxito');
+    while(this.productsCart.length > 0) {
+      this.removeFromCart(this.productsCart[0]);
+    }
+    
+    
+  }
 }

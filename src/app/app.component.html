@@ -1,8 +1,10 @@
 
 <div id="base">
   <app-top-bar [productsCart]="productsCart" (carritoClickeado)="mostrarCarrito = true" (volverClickeado)="volver()"></app-top-bar>
-  <p>Moneda</p>
-  <div id="currency">
+  
+  <p *ngIf="!mostrarCarrito">Moneda</p>
+  <div id="currency" *ngIf="!mostrarCarrito">
+   
     <img [class.selected]="selectedCurrency === 'us'" src="../assets/eeuu.jpg" alt="EEUU" (click)="selectCurrency('us')">
     <img [class.selected]="selectedCurrency === 'eu'" src="../assets/ue.png" alt="Europa" (click)="selectCurrency('eu')">
     <img [class.selected]="selectedCurrency === 'ar'" src="../assets/Bandera-Argentina.png" alt="Argentina" (click)="selectCurrency('ar')">
